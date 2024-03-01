@@ -26,8 +26,13 @@ html,
     /* Versteckt die Scrollleiste in WebKit-basierten Browsern wie Chrome und Safari */
 }
 
+/* Fügen Sie weitere Sterne hinzu, indem Sie das Muster fortsetzen */
+
+
+
+
 body {
-    background-color: rgb(72, 72, 72);
+    background-color: rgb(19, 0, 31);
     /* Hintergrundfarbe auf Discord Dunkelblau setzen */
     margin: 0;
     font-family: var(--font-font-family);
@@ -45,12 +50,14 @@ body {
 }
 
 #Grau {
-    background-image: url('arya-winarto-9XwrSmTNuuA-unsplash.jpg');
+    background-image: url('galaxy-7040416_1280.png');
     background-repeat: no-repeat;
     /* Hintergrundbild wird nur einmal wiederholt */
     background-position: center;
     /* Hintergrundbild wird zentriert positioniert */
-    background-size: 1600px;
+    background-size: 100%;
+    height: 1300px;
+
 }
 
 /* === 1 Intruktions (anleitung) === */
@@ -59,28 +66,26 @@ body {
 }
 
 .grid-container {
+    margin-top: 350px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 700px);
     /* Fünf Spalten mit gleicher Breite */
-    grid-gap: 50px;
+    grid-gap: 100px;
     /* Abstand zwischen den Boxen */
     background-size: 100%;
-    padding: 20px;
+    margin-left: 3%;
 }
 
 .box {
     padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    border-radius: 5px;
     box-shadow: none;
-    background-color: #8f8f8f8a;
     /* Startet ohne Schatten */
     transition: box-shadow 0.3s ease;
     color: rgb(255, 255, 255);
     /* Weiß */
+    height: 100px;
+    font-size: 1000px;
 }
 
 .hidden {
@@ -93,52 +98,30 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 500px);
     /* Fünf Spalten mit gleicher Breite */
-    grid-gap: 50px;
+    grid-gap: 700px;
     /* Abstand zwischen den Boxen */
     padding: 20px;
-    margin-left: 225px;
     box-shadow: 3px 10px 5px rgb(#000000);
     /* Startet ohne Schatten */
 }
 
-
-
 .box2 {
-    background-color: #8f8f8f;
+    background-color: #1f1f1f;
     /* Hintergrundfarbe auf Discord Blau setzen */
-    padding: 10px;
     border-radius: 10px;
     text-align: center;
-
-    overflow: auto;
+    align-items: center;
+    justify-content: center;
     display: flex;
-
-    box-shadow: 0px 10px 10px #000000;
-    box-shadow: -0px 10px 10px #000000;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0px 10px 10px #ffffff00;
+    box-shadow: -0px 0px 5px #676767;
     color: rgb(255, 255, 255);
     /* Weiß */
     ;
-    font-size: 16px;
-}
-
-.box2 h1 {
-    margin-bottom: 3px;
-    padding: 3px;
-    margin-left: 50%;
-    font-size: medium;
-    font-weight: bold;
-    font-family: var(--font-font-family);
-}
-
-.box2 p {
-    font-family: var(--font-font-family);
-    text-align: center;
-    margin: 10px auto;
-    margin-left: 20%;
-    margin-top: auto;
-    padding: 4px;
-    font-size: 18px;
-    font-weight: lighter;
+    font-size: 30px;
+    width: 1000px;
 }
 
 .video-container {
@@ -147,7 +130,7 @@ body {
     align-items: center;
     width: 100%;
     /* Breite des Video-Containers */
-    height: 100vh;
+    height: 10px;
     /* Höhe des Video-Containers, z.B. 100% der Bildschirmhöhe */
 }
 
@@ -160,24 +143,24 @@ body {
 
 
 
-
+.box:hover {
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.444);
+}
 
 .box p {
     font-family: var(--font-font-family);
     text-align: center;
-    padding: 4px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 30px;
     font-weight: bold;
 }
-
-
 
 /* === Navigation Line === */
 
 .nav {
-    background-color: rgba(125, 125, 125, 0.315);
+    background-color: rgba(0, 0, 0, 0);
     width: 100%;
-    height: 40px;
+    height: 100px;
     padding: 0;
     display: flex;
     align-items: center;
@@ -186,11 +169,10 @@ body {
 }
 
 .logo {
-    color: rgb(0, 0, 0);
-    text-shadow: 0px 0px 10px rgb(119, 118, 118);
+    color: rgb(255, 255, 255);
     /* Weiß */
-    margin-left: 95px;
-    font-size: 20px;
+    margin-left: 200px;
+    font-size: 30px;
 }
 
 /*
@@ -200,7 +182,7 @@ body {
 */
 
 .Items {
-    margin-left: 140px;
+    margin-left: 600px;
 
 }
 
@@ -210,46 +192,71 @@ body {
 
 .nav-links li {
     display: inline;
-    margin-left: 75px;
+    margin-left: 200px;
 }
 
 .nav-links li a {
-    font-size: 30px;
+    font-size: 38px;
     font-weight: bold;
     color: rgb(255, 255, 255);
     /* Anpassen der Textfarbe */
     text-decoration: none;
 }
 
-
-
-.moon4 {
-    margin-left: 2cm;
-    width: 300px;
-    height: 300px;
+.moon1:hover {
+    box-shadow: 0px 20px 10px rgb(0, 0, 0);
 }
-
-
-
 
 .moon2:hover {
     box-shadow: 0px 0px 0px rgb(0, 0, 0);
-
 }
 
-
-
-.moon4:hover {
-    cursor: pointer;
+.moon3:hover {
     box-shadow: 0px 20px 10px rgb(0, 0, 0);
-
 }
 
-/* home page styel */
+.spanSize {
+    font-size: 70px;
+}
 
-.background {
-    background-image: url(arya-winarto-9XwrSmTNuuA-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: none;
+.Stuf {
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(158, 2, 88);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-left: 50px;
+    width: 200px;
+}
+
+
+.stars-container {
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.star {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    animation: shooting-star var(--anim-duration) linear infinite;
+}
+
+@keyframes shooting-star {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
 }

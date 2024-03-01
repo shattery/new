@@ -1,26 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodePanta</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <div class="scrollable-content">
     <div>
         <div id="Grau">
             <div>
                 <nav class="nav" id="navbar">
-                    <div><a href="index.html"><img src="star 1.png" alt="ein stern " style="height: 40px;
-                        width: 40px; filter: drop-shadow(3px 2px 5px rgb(247, 249, 250));"></a></div>
-
                     <div class="logo">
-                        <h1><span style="color: white;">Totally</span> Coded</h1>
+                        <h1><span style="color: rgb(218, 63, 107);">Totally</span>Coded</h1>
                     </div>
                     <div class="Items">
                         <ul class="nav-links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Kurs : Javasript</a></li>
-                            <li><a href="#">Ab : 1</a></li>
+                            <li><a href="#">Kurs : </a>
+                                <select class="Stuf">
+                                    <option value="10">HTM 5</option>
+                                    <option value="12">JavaSript</option>
+                                    <option value="8">CSS3</option>
+                                </select>
+                            </li>
+                            <li><a href="#">Abteil : </a>
+                                <select class="Stuf">
+                                    <option value="10">Das div</option>
+                                    <option value="12">Die h/</option>
+                                    <option value="8">das ul/ol</option>
+                                </select>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -29,26 +39,24 @@
                     <div class="grid-container">
                         <div class="box moon1">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor quam non nunc
-                                bibendum ultricies. Cras varius lectus id mi porta, nec finibus justo blandit.
-                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                Nulla auctor justo at nibh pulvinar congue. Mauris fermentum luctus neque, eget
-                                fringilla leo venenatis vel. Integer rhoncus efficitur lorem,
+                                <span style="font-size: 50px;">Hast du gewusst:</span>
+                                <br>
+                                <br>
+                                90% von tags in deinem HTML seite sind Divs
                             </p>
                         </div>
                         <div class="box moon2"
-                            style="background-color: rgba(255, 255, 255, 0); background-image: url('astronaut-hero-img.webp'); background-size: 300px; background-repeat: no-repeat; background-position: center;">
+                            style="background-color: rgba(255, 255, 255, 0); background-image: url(); background-size: 600px; background-repeat: no-repeat; background-position: center;">
                             <p>
 
                             </p>
                         </div>
                         <div class="box moon3">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor quam non nunc
-                                bibendum ultricies. Cras varius lectus id mi porta, nec finibus justo blandit.
-                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                                Nulla auctor justo at nibh pulvinar congue. Mauris fermentum luctus neque, eget
-                                fringilla leo venenatis vel. Integer rhoncus efficitur lorem,
+                                <span style="font-size: 50px;">Hast du gewusst:</span>
+                                <br>
+                                <br>
+                                90% von tags in deinem HTML seite sind Divs
                             </p>
                         </div>
                     </div>
@@ -56,20 +64,36 @@
             </div>
         </div>
         <div class="cotainer2">
-
             <div class="grid-container2">
-                <div class="box2" id="erklärung ">
-
-                </div>
                 <div class="box2">
-
-                    <iframe width="560" height="315" src="https://youtu.be/dh01eSOn9_E?t=1" frameborder="0"
-                        allowfullscreen></iframe>
-
+                    <p>
+                        <span class="spanSize">Lorem ipsum</span>
+                        <br>
+                        <br>
+                        dolor sit amet, consectetur adipiscing elit. Nullam auctor quam non nunc bibendum ultricies.
+                        Cras varius lectus id mi porta, nec finibus justo blandit. Vestibulum ante ipsum primis in
+                        faucibus orci luctus et ultrices posuere cubilia Curae; Nulla auctor justo at nibh pulvinar
+                        congue. Mauris fermentum luctus neque, eget fringilla leo venenatis vel. Integer rhoncus
+                        efficitur lorem, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor quam non
+                        nunc bibendum ultricies. Cras varius lectus id mi porta, nec finibus justo blandit. Vestibulum
+                        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla auctor justo
+                        at nibh pulvinar congue. Mauris fermentum luctus neque, eget fringilla leo venenatis vel.
+                        Integer rhoncus efficitur lorem,
+                    </p>
                 </div>
-
+                <div class="box2"
+                    style="background-color: rgb(19, 0, 31); box-shadow: -0px 0px 10px #92006900; height: auto;">
+                    <video controls
+                        style="width: 10000px; height: auto; border: 3px #562f9e solid; border-radius: 20px;">
+                        <source src="2023-12-09_19-42-59.mp4" type="video/mp4">
+                        <!-- Fallback for browsers that do not support the MP4 format -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
 </div>
 </body>
+
+</html>
